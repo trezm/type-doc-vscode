@@ -2,8 +2,8 @@
   "name": "type-doc-vscode",
   "displayName": "type-doc-vscode",
   "description": "TypeDoc type warnings in your code",
-  "version": "0.0.1",
-  "publisher": "trezm",
+  "version": "0.0.3",
+  "publisher": "Trezm",
   "engines": {
     "vscode": "^1.10.0"
   },
@@ -41,6 +41,10 @@
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/trezm/type-doc-vscode.git"
+  },
   "devDependencies": {
     "typescript": "^2.0.3",
     "vscode": "^1.0.0",
@@ -50,7 +54,7 @@
     "@types/mocha": "^2.2.32"
   },
   "dependencies": {
-    "type-doc": "^0.1.9",
+    "type-doc": "0.1.13",
     "vscode-languageclient": "^3.1.0",
     "vscode-languageserver": "^3.1.0"
   }

@@ -11,6 +11,10 @@ TypeDoc type warnings in your code.
 
 Users appreciate release notes as you update your extension.
 
+### 0.0.3
+
+Update version and bump TypeDoc
+
 ### 0.0.1
 
 Initial release of TypeDoc VSCode

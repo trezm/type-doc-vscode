@@ -59,6 +59,8 @@ Expected type: ${expectedType}, but got ${actualType}
       };
     });
 
+    console.log('errors:', errors);
+
     connection.sendDiagnostics({ uri: event.document.uri, diagnostics });
 });
 
