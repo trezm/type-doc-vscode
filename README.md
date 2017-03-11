@@ -5,7 +5,7 @@ Static type checking for pure JavaScript
 
 TypeDoc type warnings in your code.
 
-\!\[TypeDocWarnings\]\(images/type-doc-demo.gif\)
+![TypeDocWarnings](images/type-doc-demo.gif)
 
 ## Release Notes
 
