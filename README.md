@@ -9,7 +9,9 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.6
+
+Update version and bump TypeDoc. Now should properly handle promises and type inference.
 
 ### 0.0.3
 

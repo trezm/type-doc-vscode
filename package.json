@@ -2,7 +2,7 @@
   "name": "type-doc-vscode",
   "displayName": "type-doc-vscode",
   "description": "TypeDoc type warnings in your code",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "Trezm",
   "engines": {
     "vscode": "^1.10.0"
@@ -54,7 +54,7 @@
     "@types/mocha": "^2.2.32"
   },
   "dependencies": {
-    "type-doc": "0.1.15",
+    "type-doc": "0.1.16",
     "vscode-languageclient": "^3.1.0",
     "vscode-languageserver": "^3.1.0"
   }
