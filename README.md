@@ -9,6 +9,16 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.7
+
+Better support for inline functions, e.g.
+
+```
+somePromise.then(function(result) {
+  return result;
+});
+```
+
 ### 0.0.6
 
 Update version and bump TypeDoc. Now should properly handle promises and type inference.
