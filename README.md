@@ -9,6 +9,28 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.10
+
+- Support for super/sub classes, either inferring, i.e.
+```
+class SuperClass {}
+class SubClass extends SuperClass {}
+const someClass /* t:SuperClass */ = new SubClass();
+```
+or by explicit comment
+```
+/**
+ * class :: SuperClass
+ */
+class SuperClass {}
+/**
+ * class :: SubClass => SuperClass
+ */
+class SubClass extends SuperClass {}
+const someClass /* t:SuperClass */ = new SubClass();
+```
+- `Object` is now an alias for `any`
+
 ### 0.0.7
 
 Better support for inline functions, e.g.
