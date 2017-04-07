@@ -54,7 +54,7 @@
     "@types/mocha": "^2.2.32"
   },
   "dependencies": {
-    "type-doc": "0.1.20",
+    "type-doc": "0.1.21",
     "vscode-languageclient": "^3.1.0",
     "vscode-languageserver": "^3.1.0"
   }

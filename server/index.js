@@ -31,7 +31,10 @@ documents.onDidChangeContent((event) => {
   let errors = [];
 
   try {
-    errors = TypeDoc(event.document.uri.replace(/^file:\/\//, ''), false, { content: event.document.getText() });
+    errors = TypeDoc(event.document.uri.replace(/^file:\/\//, ''), false, {
+      content: event.document.getText(),
+      definitionFiles: event.settings.typeDocServer.definitionFiles || []
+    });
   } catch (e) {}
 
   const diagnostics = errors
