@@ -22,9 +22,11 @@ connection.onInitialize((params) => {
 });
 
 let maxNumberOfProblems;
+let definitionFiles = [];
 connection.onDidChangeConfiguration((change) => {
   const settings = change.settings;
   maxNumberOfProblems = settings.typeDocServer.maxNumberOfProblems || 100;
+  definitionFiles = settings.typeDocServer.definitionFiles || [];
 });
 
 documents.onDidChangeContent((event) => {
@@ -33,9 +35,11 @@ documents.onDidChangeContent((event) => {
   try {
     errors = TypeDoc(event.document.uri.replace(/^file:\/\//, ''), false, {
       content: event.document.getText(),
-      definitionFiles: event.settings.typeDocServer.definitionFiles || []
+      definitionFiles: definitionFiles
     });
-  } catch (e) {}
+  } catch (e) {
+    console.log('e:', e);
+  }
 
   const diagnostics = errors
     .map((error) => {
@@ -61,8 +65,6 @@ Expected type: ${expectedType}, but got ${actualType}
         source: 'TypeDoc'
       };
     });
-
-    console.log('errors:', errors);
 
     connection.sendDiagnostics({ uri: event.document.uri, diagnostics });
 });

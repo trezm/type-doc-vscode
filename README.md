@@ -9,6 +9,18 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.14
+
+- Support for external type definition files in `.d.ts` format. Access through the settings:
+```
+{
+  "typeDocServer.definitionFiles": [
+    "./src/integrationTests/test.d.ts"
+  ]
+}
+```
+- Added in TypeScript's lib.d.ts for better definitions. Included with every install.
+
 ### 0.0.10
 
 - Support for super/sub classes, either inferring, i.e.
