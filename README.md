@@ -9,6 +9,11 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.19
+
+- Better support for dot notation handling
+- Various small bug fixes
+
 ### 0.0.14
 
 - Support for external type definition files in `.d.ts` format. Access through the settings:
