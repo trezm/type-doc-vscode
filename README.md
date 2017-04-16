@@ -9,6 +9,10 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.20
+
+- Update type-doc version
+
 ### 0.0.19
 
 - Better support for dot notation handling
