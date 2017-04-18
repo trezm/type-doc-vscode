@@ -33,10 +33,11 @@ documents.onDidChangeContent((event) => {
   let errors = [];
 
   try {
-    errors = TypeDoc(event.document.uri.replace(/^file:\/\//, ''), false, {
+    const currentFile = event.document.uri.replace(/^file:\/\//, '');
+    errors = TypeDoc(currentFile, false, {
       content: event.document.getText(),
       definitionFiles: definitionFiles
-    });
+    }).filter((error) => error.extras.file === currentFile);
   } catch (e) {
     console.log('e:', e);
   }
