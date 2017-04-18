@@ -9,6 +9,10 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.21
+
+- Minor bug fixes for increased stability
+
 ### 0.0.20
 
 - Update type-doc version
