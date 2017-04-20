@@ -9,6 +9,10 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.23
+
+- Fix issues with call expressions as part of member expressions, i.e. `someMethod().blah.blah`
+
 ### 0.0.22
 
 - Fix issue with errors in separate files
