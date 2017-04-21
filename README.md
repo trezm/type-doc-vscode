@@ -9,6 +9,12 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.24
+
+- Handle circular references
+- Allow missing JSDoc params
+- const should infer type from the assignment
+
 ### 0.0.23
 
 - Fix issues with call expressions as part of member expressions, i.e. `someMethod().blah.blah`
