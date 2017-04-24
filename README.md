@@ -9,6 +9,10 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.26
+
+- Roll back some minor changes and add some more robustness because of exceptions.
+
 ### 0.0.24
 
 - Handle circular references
