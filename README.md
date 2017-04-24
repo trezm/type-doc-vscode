@@ -9,6 +9,10 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.27
+
+- Run type inferer on function bodies
+
 ### 0.0.26
 
 - Roll back some minor changes and add some more robustness because of exceptions.
