@@ -2,7 +2,7 @@
   "name": "type-doc-vscode",
   "displayName": "type-doc-vscode",
   "description": "TypeDoc type warnings in your code",
-  "version": "0.0.27",
+  "version": "0.0.33",
   "publisher": "Trezm",
   "engines": {
     "vscode": "^1.10.0"
@@ -37,6 +37,11 @@
         "typeDocServer.definitionFiles": {
           "type": "array",
           "description": "An array of all definition files that typedoc should use."
+        },
+        "typeDocServer.strictClassChecks": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether or not to strictly check the properties of classes and structs, i.e. complain if they're not there."
         }
       }
     }
@@ -58,7 +63,7 @@
     "@types/mocha": "^2.2.32"
   },
   "dependencies": {
-    "type-doc": "0.1.35",
+    "type-doc": "0.1.40",
     "vscode-languageclient": "^3.1.0",
     "vscode-languageserver": "^3.1.0"
   }

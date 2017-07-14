@@ -23,10 +23,12 @@ connection.onInitialize((params) => {
 
 let maxNumberOfProblems;
 let definitionFiles = [];
+let strictClassChecks;
 connection.onDidChangeConfiguration((change) => {
   const settings = change.settings;
   maxNumberOfProblems = settings.typeDocServer.maxNumberOfProblems || 100;
   definitionFiles = settings.typeDocServer.definitionFiles || [];
+  strictClassChecks = settings.typeDocServer.strictClassChecks || false;
 });
 
 documents.onDidChangeContent((event) => {
@@ -34,10 +36,13 @@ documents.onDidChangeContent((event) => {
 
   try {
     const currentFile = event.document.uri.replace(/^file:\/\//, '');
+    let now = Date.now();
     errors = TypeDoc(currentFile, false, {
       content: event.document.getText(),
-      definitionFiles: definitionFiles
+      definitionFiles: definitionFiles,
+      strictClassChecks: strictClassChecks
     }).filter((error) => error.extras.file === currentFile);
+    console.log(`Finished in: ${Date.now() - now}ms`);
   } catch (e) {
     console.log('e:', e);
   }

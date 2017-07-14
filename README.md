@@ -9,6 +9,15 @@ TypeDoc type warnings in your code.
 
 ## Release Notes
 
+### 0.0.33
+
+- Add duck typing
+- Fix minor bugs
+
+### 0.0.29
+
+- Improve performance
+
 ### 0.0.27
 
 - Run type inferer on function bodies
