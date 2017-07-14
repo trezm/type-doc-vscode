@@ -2127,9 +2127,9 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
-type-doc@0.1.39:
-  version "0.1.39"
-  resolved "https://registry.yarnpkg.com/type-doc/-/type-doc-0.1.39.tgz#05aaecad59d74ef786eaa2f818a7b6d863c5e0e5"
+type-doc@0.1.40:
+  version "0.1.40"
+  resolved "https://registry.yarnpkg.com/type-doc/-/type-doc-0.1.40.tgz#96623b19dd4d01739c83a2a6a986a9e1add9a918"
   dependencies:
     body-parser "1.15.2"
     chalk "1.1.3"
